@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "./components/Navbar";
+import AmbientBackground from "./components/AmbientBackground";
 import { ThemeProvider } from "./context/ThemeContext";
 import "./globals.css";
 
@@ -35,11 +36,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-white transition-colors dark:bg-gray-900 dark:text-white ${geistSans.variable} ${geistMono.variable}`}
+        className={`bg-[#070c18] text-white transition-colors ${geistSans.variable} ${geistMono.variable}`}
       >
         <ThemeProvider>
+          <AmbientBackground />
           <Navbar />
-          <main className="min-h-screen ">{children}</main>
+          <main className="relative z-10 min-h-screen">{children}</main>
           {/* <Footer /> */}
         </ThemeProvider>
       </body>

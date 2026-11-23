@@ -13,7 +13,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 import LiquidEther from "./LiquidEther";
 
 const Hero = () => {
-  // const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
 
   return (
     <section id="home" className="relative w-full   h-screen">
@@ -63,7 +63,7 @@ const Hero = () => {
       <div className="relative py-32 container max-w-7xl mx-auto pt-82 px-4 z-0">
         <div className="relative !z-10 max-w-3xl mx-auto text-center">
           <div className="max-w-3xl mx-auto text-center">
-            <motion.div
+           <motion.div
               {...scaleIn}
               transition={{ delay: 0.05 }}
               className="flex flex-col items-center"
@@ -71,19 +71,21 @@ const Hero = () => {
               <motion.h1
                 {...fadeInUp}
                 transition={{ delay: 0.2 }}
-                //   className="text-4xl md:text-6xl font-bold text-primary mb-4"
                 className="text-4xl md:text-6xl font-bold mb-6"
               >
-                Welcome!
-                <span className="text-primary"> Fadi Asfour Here!</span>
+                <span className="text-primary">
+                  Software Engineer, AI Specialist
+                </span>
+                <span className="block mt-2">& Teaching Assistant</span>
               </motion.h1>
             </motion.div>
-            <motion.p
+     <motion.p
               {...fadeInDown}
               transition={{ delay: 0.5 }}
-              className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8"
+              className="text-xl md:text-2xl text-slate-200 mb-8"
             >
-              Mobile & Web Software Engineer 
+              I build scalable mobile and web systems and teach Python,
+              algorithms, and AI.
             </motion.p>
 
             {/* <motion.div

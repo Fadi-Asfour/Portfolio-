@@ -63,8 +63,7 @@ const About = () => {
                   height={24}
                 />
               }
-              link="https://drive.google.com/drive/folders/1AzvpWevKJAcfl808RSu4uYeTxj4lw8IH?usp=sharing"
-              // TODO: check link to cv
+              link="/Fadi-Asfour-CV.pdf"
             />
           </div>
         </section>
